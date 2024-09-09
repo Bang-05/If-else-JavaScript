@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm</title>
+    <style>
+        .container {
+            background-color: rgb(210, 201, 201);
+            width: 500px;
+            height: 350px;
+            margin: 40px 80px;
+            padding: 10px;
+            border: 2px solid red;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        .nhap {
+            display: flex;
+            padding: 10px;
+            height: 40px;
+        }
+        input {
+            width: 300px;
+        }
+        .nhap>label {
+            margin-top: 15px;
+            margin-right: 20px;
+            max-width: 70px;
+            font-size: 20px;
+            
+        }
+        .year>label {
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 45px;
+            max-width: 70px;
+            font-size: 20px;
+        }
+        select {
+            height: 40px;
+            color: red;
+        }
+        .btn>input {
+            max-width: 100px;
+            margin-top: 35px;
+            margin-left: 100px;
+        }
+        #xeploai {
+            font-size: 25px;
+            margin-left: 40px;
+            margin-top: -60px;
+        }
+    </style>
+</head>
+<body>
+    <script src="Bai1.js"></script>
+    <div class="container">
+        <form>
+            <h1>BẢNG ĐIỂM CỦA EM</h1>
+            <div class="nhap">
+                <label for="Semester1">Semester1:</label>
+                <input type="number" name="Semester1" id="s1">
+            </div>
+            <div class="nhap">
+                <label for="Semester2">Semester2:</label>
+                <input type="number" name="Semester2" id="s2">
+            </div>
+            <div class="year">
+                <label for="Year">Year:</label>
+                <select name="year" id="year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="nhap">
+                <label for="rs">Sumerise:</label>
+                <input type="text" name="rs" id="kq">
+            </div>
+            <div class="btn">
+                <input type="button" name="OK" value="OK" id="OK" onclick="myFunction1()">
+                <input type="button" name="Cancel" value="Cancel" id="Cancel" onclick="myFunction2()">
+            </div>
+            <div id="xeploai"></div>
+        </form>
+    </div>
+</body>
+</html>
